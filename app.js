@@ -14,28 +14,49 @@
 // })
 ///
 
-const data = [[1, 2, 3], 'red', [4, 5, 6], true, false]
-const newData = []
+// const data = [[1, 2, 3], 'red', [4, 5, 6], true, false]
+// const newData = []
 
-data.forEach((item) => {
-    const res = Array.isArray(item)
-    if (res) {
-        item.forEach((num) => {
-            newData.push(num)
-        })
-    }
-})
+// data.forEach((item) => {
+//     const res = Array.isArray(item)
+//     if (res) {
+//         item.forEach((num) => {
+//             newData.push(num)
+//         })
+//     }
+// })
 
-console.log(newData);
+// console.log(newData);
 ///
 
-const checkData = [null, 'false', 0, 99, false, undefined, '', NaN, '0'];
-const falsey = []
-checkData.forEach((item) => {
-    if (!item) {
-        falsey.push(item)
-    }
-})
+// const checkData = [null, 'false', 0, 99, false, undefined, '', NaN, '0'];
+// const falsey = []
+// checkData.forEach((item) => {
+//     if (!item) {
+//         falsey.push(item)
+//     }
+// })
 
-console.log(falsey);
+// console.log(falsey);
+///
+
+// word to reverse for loop variant
+// const word = 'samarqand';
+// const splitWord = word.split('').reverse();
+// let newWord = ''
+// for (let i = 0; i < splitWord.length; i++) {
+//     newWord += splitWord[i];
+// }
+
+// console.log(newWord);
+
+//word to reverse forEach variant
+const word = 'samarqand'
+const splitWord = word.split('').reverse();
+let newWord = ''
+
+splitWord.forEach((item) => {
+    newWord += item
+})
+console.log(newWord);
 ///
