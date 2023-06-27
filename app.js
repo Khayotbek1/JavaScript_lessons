@@ -51,12 +51,37 @@
 // console.log(newWord);
 
 //word to reverse forEach variant
-const word = 'samarqand'
-const splitWord = word.split('').reverse();
-let newWord = ''
+// const word = 'samarqand'
+// const splitWord = word.split('').reverse();
+// let newWord = ''
 
-splitWord.forEach((item) => {
-    newWord += item
-})
-console.log(newWord);
+// splitWord.forEach((item) => {
+//     newWord += item
+// })
+// console.log(newWord);
 ///
+
+// const word = 'AsSSalamu AlaYkum YaXsHimiSiz'
+// let splitWord = word.split(' ')
+// let newWord = ''
+
+// splitWord.forEach((item) => {
+//     const head = item.charAt().toUpperCase()
+//     const half = item.slice(1).toLowerCase()
+//     newWord += ' ' + head + half
+// })
+
+// console.log(newWord.trimStart());
+///
+
+const numbers = [-1, 82, 4, 3.1, -5.5, Infinity, 0, 2, 0.9]
+let naturalNumber = 0
+
+numbers.forEach((num) => {
+    if (num >= 0.0 && Math.floor(num) === num && num !== Infinity && num !== 0) {
+        naturalNumber += num
+    }
+})
+
+console.log(naturalNumber);
+
