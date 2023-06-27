@@ -72,16 +72,27 @@
 // })
 
 // console.log(newWord.trimStart());
+// /
+
+// const numbers = [-1, 82, 4, 3.1, -5.5, Infinity, 0, 2, 0.9]
+// let naturalNumber = 0
+
+// numbers.forEach((num) => {
+//     if (num >= 0.0 && Math.floor(num) === num && num !== Infinity && num !== 0) {
+//         naturalNumber += num
+//     }
+// })
+
+// console.log(naturalNumber);
 ///
-
-const numbers = [-1, 82, 4, 3.1, -5.5, Infinity, 0, 2, 0.9]
-let naturalNumber = 0
-
-numbers.forEach((num) => {
-    if (num >= 0.0 && Math.floor(num) === num && num !== Infinity && num !== 0) {
-        naturalNumber += num
+// Matndagi harflardan a A harfi necha marta ishtirok etganligini topish
+const words = 'QaAlesiz yaxshimisiz'
+let splitWords = words.split('')
+let counter = 0
+splitWords.forEach((word) => {
+    if (word == 'a' || word == 'A') {
+        counter++
     }
 })
-
-console.log(naturalNumber);
-
+console.log(`${counter} 'etgan'`);
+///
