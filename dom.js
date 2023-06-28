@@ -1,5 +1,5 @@
-// const listItem = document.getElementsByTagName('li')
-// console.log(listItem);
+const listItem = document.getElementsByTagName('li')
+console.log(listItem);
 
 
 //id bo'yicha olish
@@ -8,9 +8,9 @@ console.log(clickBtn);
 
 
 // queryselectorAll array [nodeList] qaytaradi va uni forEach qilsa boladi lekin u to'la qonli array emas
-const listItem = document.querySelectorAll('.list-item')
+const litem = document.querySelectorAll('.list-item')
 listItem.forEach((item) => {
-    console.log(item);
+    console.log(litem);
 })
 
 
