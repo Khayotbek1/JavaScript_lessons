@@ -18,18 +18,37 @@
 // const title = document.querySelector('#title')
 // console.log(title);
 
-const title = document.getElementById('title')
-const listItem = document.querySelectorAll('.list-item')
-const peopleList = document.querySelector('.people-list')
-const names = ['Khayot', 'Doston', 'Donyor']
 
-title.textContent += ' New text';
+//TextContent and innerHtml
+// const title = document.getElementById('title')
+// const listItem = document.querySelectorAll('.list-item')
+// const peopleList = document.querySelector('.people-list')
+// const names = ['Khayot', 'Doston', 'Donyor']
 
-listItem.forEach((item) => {
-    item.textContent += ' darslari'
-    console.log(item);
-})
+// title.textContent += ' New text';
 
-names.forEach((name) => {
-    peopleList.innerHTML += `<li>${name}</li>`
-})
+// listItem.forEach((item) => {
+//     item.textContent += ' darslari'
+//     console.log(item);
+// })
+
+// names.forEach((name) => {
+//     peopleList.innerHTML += `<li>${name}</li>`
+// })
+
+///
+
+const link = document.querySelector('a')
+const text = document.querySelector('.error')
+
+console.log(link.getAttribute('href'));
+console.log(text.getAttribute('class'));
+
+link.setAttribute('href', 'https://www.yandex.ru');
+link.textContent = 'Yandex search';
+
+text.setAttribute('class', 'success'); //class nomi o'zgardi
+text.setAttribute('style', 'color: red') // yangi style attributi qo'shdi va unga qiymat berildi
+
+
+
