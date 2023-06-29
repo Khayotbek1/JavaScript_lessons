@@ -54,6 +54,30 @@
 
 
 //JS orqali elementlarga style berish
-const title = document.getElementById('title')
-title.style.color = 'crimson'
-title.style.margin = '50px'
+// const title = document.getElementById('title')
+// title.style.color = 'crimson'
+// title.style.margin = '50px'
+
+
+
+//add and remove methods ClassList
+
+// const text = document.querySelector('.error');
+// text.classList.add('success')
+// text.classList.remove('success')
+
+
+const text = document.querySelectorAll('p')
+
+text.forEach((item) => {
+    if (item.textContent.includes('error')) {
+        item.classList.add('error')
+    } else if (item.textContent.includes('success')) {
+        item.classList.add('success')
+    }
+
+})
+
+//toggle methodi bu elementda korsatilgan class bolsa olib tawlaydi agar yoq bolsa aksincha qowadi
+const toggle = document.querySelector('h3')
+toggle.classList.toggle('success')

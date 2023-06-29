@@ -1,0 +1,12 @@
+.error {
+    color: aqua;
+    margin: 50px;
+    font-size: 50px;
+}
+
+.success {
+    color: magenta;
+    margin: 20px;
+    font-size: 25px;
+    border: 2px dotted #000;
+}
