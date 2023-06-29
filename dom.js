@@ -2,19 +2,19 @@
 // console.log(listItem);
 
 
-// //id bo'yicha olish
+//id bo'yicha olish
 // const clickBtn = document.getElementById('click-btn')
 // console.log(clickBtn);
 
 
-// // queryselectorAll array [nodeList] qaytaradi va uni forEach qilsa boladi lekin u to'la qonli array emas
+// queryselectorAll array [nodeList] qaytaradi va uni forEach qilsa boladi lekin u to'la qonli array emas
 // const litem = document.querySelectorAll('.list-item')
 // listItem.forEach((item) => {
 //     console.log(litem);
 // })
 
 
-// //id bo'yicha olish
+//id bo'yicha olish
 // const title = document.querySelector('#title')
 // console.log(title);
 
@@ -38,17 +38,22 @@
 
 ///
 
-const link = document.querySelector('a')
-const text = document.querySelector('.error')
 
-console.log(link.getAttribute('href'));
-console.log(text.getAttribute('class'));
+//setAttribute and getAttribute
+// const link = document.querySelector('a')
+// const text = document.querySelector('.error')
 
-link.setAttribute('href', 'https://www.yandex.ru');
-link.textContent = 'Yandex search';
+// console.log(link.getAttribute('href'));
+// console.log(text.getAttribute('class'));
 
-text.setAttribute('class', 'success'); //class nomi o'zgardi
-text.setAttribute('style', 'color: red') // yangi style attributi qo'shdi va unga qiymat berildi
+// link.setAttribute('href', 'https://www.yandex.ru');
+// link.textContent = 'Yandex search';
+
+// text.setAttribute('class', 'success'); //class nomi o'zgardi
+// text.setAttribute('style', 'color: red') // yangi style attributi qo'shdi va unga qiymat berildi
 
 
-
+//JS orqali elementlarga style berish
+const title = document.getElementById('title')
+title.style.color = 'crimson'
+title.style.margin = '50px'
