@@ -78,12 +78,12 @@
 
 // })
 
-// //toggle methodi bu elementda korsatilgan class bolsa olib tawlaydi agar yoq bolsa aksincha qowadi
+//toggle methodi bu elementda korsatilgan class bolsa olib tawlaydi agar yoq bolsa aksincha qowadi
 // const toggle = document.querySelector('h3')
 // toggle.classList.toggle('success')
 
 
-//Parent,Children and Sibling 
+// Parent,Children and Sibling 
 // const article = document.querySelector('article');
 // console.log(article.children);
 // Array.from(article.children).forEach((child) => {
