@@ -67,17 +67,31 @@
 // text.classList.remove('success')
 
 
-const text = document.querySelectorAll('p')
+// const text = document.querySelectorAll('p')
 
-text.forEach((item) => {
-    if (item.textContent.includes('error')) {
-        item.classList.add('error')
-    } else if (item.textContent.includes('success')) {
-        item.classList.add('success')
-    }
+// text.forEach((item) => {
+//     if (item.textContent.includes('error')) {
+//         item.classList.add('error')
+//     } else if (item.textContent.includes('success')) {
+//         item.classList.add('success')
+//     }
 
-})
+// })
 
-//toggle methodi bu elementda korsatilgan class bolsa olib tawlaydi agar yoq bolsa aksincha qowadi
-const toggle = document.querySelector('h3')
-toggle.classList.toggle('success')
+// //toggle methodi bu elementda korsatilgan class bolsa olib tawlaydi agar yoq bolsa aksincha qowadi
+// const toggle = document.querySelector('h3')
+// toggle.classList.toggle('success')
+
+
+//Parent,Children and Sibling 
+// const article = document.querySelector('article');
+// console.log(article.children);
+// Array.from(article.children).forEach((child) => {
+//     child.classList.add('article-child')
+// });
+
+const title = document.querySelector('h2')
+console.log(title.parentElement); // ota elementini qaytaradi
+console.log(title.parentElement.parentElement); // ota elementni otasini qaytaradi
+console.log(title.nextElementSibling); // o'zidan bitta keyingi elementni qaytaradi
+console.log(title.previousElementSibling); // o'zidan bitta oldingi elementni qaytaradi
