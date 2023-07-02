@@ -1,17 +1,16 @@
-const ul = document.querySelector('.list-item');
-const items = document.querySelectorAll('.item');
-const button = document.querySelector('.btn');
+const ul = document.querySelector(".list-item");
+const items = document.querySelectorAll(".item");
+const button = document.querySelector(".btn");
 
-
-button.addEventListener('click', () => {
-    const li = document.createElement('li');
-    li.classList.add('item');
-    li.textContent = 'The best developer Khayot 💻';
-    ul.appendChild(li)
+button.addEventListener("click", () => {
+  const li = document.createElement("li");
+  li.classList.add("item");
+  li.textContent = "The best developer Khayot Razzakov";
+  ul.appendChild(li);
 });
 
-items.forEach((item) => {
-    item.addEventListener('click', (e) => {
-        e.target.remove();
-    });
+ul.addEventListener("click", (e) => {
+  if (e.target.nodeName == "LI") {
+    e.target.remove();
+  }
 });
