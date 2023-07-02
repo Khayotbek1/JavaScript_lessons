@@ -15,15 +15,10 @@ const items = document.querySelectorAll('li');
 // ul.remove()
 
 button.addEventListener('click', () => {
-    // ul.innerHTML += '<li>Somethins new text</li>'
-
-    //js da element yarartsh
-
-    const li = document.createElement('li')
-    li.textContent = 'Something new text '
-    ul.appendChild(li) //prepend (li) tepadan qowadi
+    const li = document.createElement('li');
+    li.textContent = 'Something new text 📚📚'
+    ul.appendChild(li)
 })
-
 
 items.forEach((item) => {
     item.addEventListener('click', (e) => {
