@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    background-color: #fbab7e;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(20,53,83,1) 35%, rgba(0,212,255,1) 100%);
+    transition: all 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background-color: rgba(204, 204, 204, 0.5);
+    padding: 15px 25px;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+    margin-bottom: 25px;
+}
+
+.container:hover{
+    box-shadow: -3px 4px 21px 8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 4px 21px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 4px 21px 8px rgba(0,0,0,0.75);
+    transform: scale(1.05);
+}
+
+.container h1{
+    font-weight: 500;
+}
+
+.color-text{
+    font-size: 18px;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 50px;
+}
+
+@media (max-width: 460px){
+    .container h1 {
+        font-size: 22px;
+    }
+}
