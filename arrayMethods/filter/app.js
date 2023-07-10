@@ -8,4 +8,5 @@ const movies = [
 const filterMovies = movies.filter((movie) => {
   return movie.name.includes("3D");
 });
+
 console.log(filterMovies);
