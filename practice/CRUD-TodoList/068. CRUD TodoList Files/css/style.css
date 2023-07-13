@@ -53,4 +53,8 @@ img:hover {
 
 .complated {
   opacity: 0.5;
+} 
+
+#message-create{
+  transform: scale(1);
 }
