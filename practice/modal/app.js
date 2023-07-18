@@ -22,3 +22,7 @@ document.addEventListener("keydown", (e) => {
     addHidden();
   }
 });
+
+function closebtn() {
+  console.log("close");
+}
