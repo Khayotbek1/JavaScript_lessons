@@ -5,8 +5,6 @@ const movies = [
   { name: "Avengars", year: 2012, rating: 6 },
 ];
 
-const filterMovies = movies.filter((movie) => {
-  return movie.name.includes("3D");
-});
+const filterMovies = movies.filter((movie) => movie.name.includes("3D"));
 
 console.log(filterMovies);
